@@ -44,5 +44,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="subterrainian.d" />
+    <Compile Include="input.d" />
+    <Compile Include="sdl\c.d" />
+    <Compile Include="sdl\defs.d" />
+    <Compile Include="sdl\event.d" />
+    <Compile Include="sdl\main.d" />
+    <Compile Include="sdl\renderer.d" />
+    <Compile Include="sdl\window.d" />
+    <Compile Include="sdl\xlib.d" />
   </ItemGroup>
 </Project>
