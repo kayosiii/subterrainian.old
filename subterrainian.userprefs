@@ -1,18 +1,21 @@
 ﻿<Properties StartupItem="subterrainian/subterrainian.dproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="subterrainian/input.d">
+  <MonoDevelop.Ide.Workbench ActiveDocument="subterrainian/audio.d">
     <Files>
-      <File FileName="subterrainian/subterrainian.d" Line="18" Column="3" />
+      <File FileName="subterrainian/subterrainian.d" Line="1" Column="1" />
       <File FileName="subterrainian/input.d" Line="14" Column="22" />
-      <File FileName="subterrainian/sdl/event.d" Line="12" Column="70" />
+      <File FileName="subterrainian/sdl/event.d" Line="1" Column="1" />
+      <File FileName="subterrainian/audio.d" Line="5" Column="1" />
+      <File FileName="subterrainian/jack/client.d" Line="10" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="subterrainian" expanded="True">
             <Node name="subterrainian" expanded="True">
+              <Node name="jack" expanded="True" />
               <Node name="sdl" expanded="True" />
-              <Node name="input.d" selected="True" />
+              <Node name="audio.d" selected="True" />
             </Node>
           </Node>
         </State>

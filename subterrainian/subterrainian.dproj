@@ -19,7 +19,7 @@
     <Target>Executable</Target>
     <Externalconsole>true</Externalconsole>
     <DebugLevel>0</DebugLevel>
-    <ExtraLinkerArguments>-lSDL2 -lX11</ExtraLinkerArguments>
+    <ExtraLinkerArguments>-lSDL2 -lX11 -ljack</ExtraLinkerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -30,6 +30,7 @@
     <Target>Executable</Target>
     <Externalconsole>true</Externalconsole>
     <DebugLevel>0</DebugLevel>
+    <ExtraLinkerArguments>-lSDL2 -lX11</ExtraLinkerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +42,7 @@
     <Target>Executable</Target>
     <Externalconsole>true</Externalconsole>
     <DebugLevel>0</DebugLevel>
+    <ExtraLinkerArguments>-lSDL2 -lX11</ExtraLinkerArguments>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="subterrainian.d" />
@@ -54,5 +56,10 @@
     <Compile Include="sdl\xlib.d" />
     <Compile Include="video.d" />
     <Compile Include="types.d" />
+    <Compile Include="audio.d" />
+    <Compile Include="jack\c.d" />
+    <Compile Include="jack\client.d" />
+    <Compile Include="jack\defs.d" />
+    <Compile Include="jack\port.d" />
   </ItemGroup>
 </Project>
