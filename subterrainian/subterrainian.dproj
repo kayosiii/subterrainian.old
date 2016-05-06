@@ -4,7 +4,6 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5B42238B-C1BB-48D7-8D4B-A4C2BDE946C3}</ProjectGuid>
-    <BaseDirectory>.</BaseDirectory>
     <Compiler>DMD2</Compiler>
     <PreferOneStepBuild>true</PreferOneStepBuild>
     <UseDefaultCompiler>true</UseDefaultCompiler>
@@ -20,6 +19,7 @@
     <Target>Executable</Target>
     <Externalconsole>true</Externalconsole>
     <DebugLevel>0</DebugLevel>
+    <ExtraLinkerArguments>-lSDL2 -lX11</ExtraLinkerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -52,5 +52,7 @@
     <Compile Include="sdl\renderer.d" />
     <Compile Include="sdl\window.d" />
     <Compile Include="sdl\xlib.d" />
+    <Compile Include="video.d" />
+    <Compile Include="types.d" />
   </ItemGroup>
 </Project>
