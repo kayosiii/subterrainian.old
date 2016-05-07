@@ -88,7 +88,7 @@ private __gshared
 	float cpu_load;
 }
 
-extern (C) @nogc @trusted
+extern (C) @trusted
 {
 	int process (nframes_t nframes, void *_)
 	{

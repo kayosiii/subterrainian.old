@@ -29,6 +29,10 @@ void run_thread()
 						case ESCAPE:
 							running = false;
 							break;
+						case A:
+							import loops;
+							loops.loop_clicked();
+							break;
 						default: break;
 					}
 					break;
