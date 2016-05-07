@@ -5,7 +5,7 @@ import video;
 import std.exception : enforce;
 
 import sdl.main;
-import xlib, input;
+import xlib, input, audio;
 
 version = X11;
 //debug = main;
@@ -18,8 +18,15 @@ void go ()
 	else { assert (0,"CORE: Currently on XWindows is supported\n"); }
 	enforce (sdl.main.init(SDLInit.VIDEO|SDLInit.JOYSTICK), "CORE: SDL failed to start\n"); 
 
-	video.start;
-	scope (exit) video.stop;
+	video.start();
+	scope (exit) video.stop();
+
+	audio.open();
+	scope (exit) audio.close();
+	audio.start();
+
+	audio.finalise();
+
 
 	debug (main)
 	{

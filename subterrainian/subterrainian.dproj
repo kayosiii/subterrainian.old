@@ -61,5 +61,7 @@
     <Compile Include="jack\client.d" />
     <Compile Include="jack\defs.d" />
     <Compile Include="jack\port.d" />
+    <Compile Include="mixer.d" />
+    <Compile Include="dsp.d" />
   </ItemGroup>
 </Project>
